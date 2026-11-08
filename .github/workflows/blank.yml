@@ -20,11 +20,11 @@ jobs:
           gradle-version: '8.9'
 
       - name: Build APK
-        working-directory: android-tv
+        working-directory: android-tv/android-tv
         run: gradle assembleRelease --no-daemon
 
       - name: Rename APK
-        run: cp android-tv/app/build/outputs/apk/release/app-release.apk ScreenCastTV.apk
+        run: cp android-tv/android-tv/app/build/outputs/apk/release/app-release.apk ScreenCastTV.apk
 
       - uses: actions/upload-artifact@v4
         with:
