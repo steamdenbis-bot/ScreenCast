@@ -14,10 +14,24 @@ android {
         versionName '2.0'
     }
 
+    // постоянный ключ подписи: без него каждая сборка на GitHub получает новый ключ,
+    // и Android отказывается обновлять приложение поверх старого
+    signingConfigs {
+        fixed {
+            storeFile file('screencast.keystore')
+            storePassword 'screencast'
+            keyAlias 'screencast'
+            keyPassword 'screencast'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.fixed
+        }
+        debug {
+            signingConfig signingConfigs.fixed
         }
     }
 
