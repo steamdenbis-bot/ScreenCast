@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp" android:height="180dp"
+    android:viewportWidth="320" android:viewportHeight="180">
+    <path android:fillColor="#1E3A8A" android:pathData="M0,0h320v180h-320z" />
+    <!-- монитор ПК -->
+    <path android:fillColor="#FFFFFF" android:pathData="M40,55h80v55h-80z" />
+    <path android:fillColor="#1E3A8A" android:pathData="M45,60h70v45h-70z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M70,110h20v10h-20zM60,120h40v5h-40z" />
+    <!-- стрелка -->
+    <path android:fillColor="#38BDF8" android:pathData="M135,82h30v-12l25,20l-25,20v-12h-30z" />
+    <!-- телевизор -->
+    <path android:fillColor="#FFFFFF" android:pathData="M205,45h85v62h-85z" />
+    <path android:fillColor="#1E3A8A" android:pathData="M210,50h75v52h-75z" />
+    <path android:fillColor="#38BDF8" android:pathData="M240,64l16,12l-16,12z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M225,112h45v5h-45z" />
+</vector>
